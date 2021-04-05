@@ -1,12 +1,13 @@
 package main
 
+import "fmt"
+
 func main() {
-	cards := deck{"Ace of diamonds", newCard()}
+	//creates a new decks of cards
+	cards := newDeck()
+	//split the deck of cards in two hands of fixed size
+	//hand, remainingCards := deal(cards, 5)
+	//print the cards in both hands
+	fmt.Println(cards.toString())
 
-	cards = append(cards, "Six of spaces")
-	cards.print()
-}
-
-func newCard() string {
-	return "five of diamonds"
 }
