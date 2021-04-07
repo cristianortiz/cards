@@ -7,7 +7,10 @@ func main() {
 	//hand, remainingCards := deal(cards, 5)
 	//print the cards in both hands
 	//cards.saveToFile("my_deck")
-	cards := newDeckFromFile("my_dec")
+	//read a file and create a new deck of cards from it catches read errors too
+	//cards := newDeckFromFile("my_deck")
+	cards := newDeck()
+	cards.shuffle()
 	cards.print()
 
 }
